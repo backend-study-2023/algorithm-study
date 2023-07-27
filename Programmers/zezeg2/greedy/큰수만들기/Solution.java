@@ -18,12 +18,12 @@ public class Solution {
         return numList.stream().map(String::valueOf).collect(Collectors.joining());
     }
 
-    public static String solution2(String number, int k){
+    public static String solution2(String number, int k) {
         StringBuilder answer = new StringBuilder();
         int length = number.length() - k;
         int start = 0;
 
-        while(start < number.length() && answer.length() != length) {
+        while (start < number.length() && answer.length() != length) {
             int leftLocation = k + answer.length() + 1;
             int max = 0;
             for (int j = start; j < leftLocation; j++) {
