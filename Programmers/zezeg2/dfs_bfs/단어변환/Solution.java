@@ -3,7 +3,7 @@ package zezeg2.dfs_bfs.단어변환;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class Solution {
+class Solution {
 
     static class Node {
         String value;
